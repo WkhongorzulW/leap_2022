@@ -1,0 +1,42 @@
+body{
+    background-color: blue;
+}
+img{
+    width: 1000px;
+}
+@media only screen and (max-width: 850px){
+    body{
+        background-color: darkorange;
+    }
+    img{
+        width: 800px;
+    }
+}
+@media only screen and (max-width: 760px){
+    body{
+        background-color: red;
+    }
+    img{
+        width: 700px;
+    }
+}
+@media only screen and (max-width: 400px){
+    body{
+        background-color: greenyellow;
+    }
+    img{
+        width: 300px;
+    }
+}
+.text-container div{
+    margin: 10px;
+    width: 300px;
+}
+.text-container{
+    display: flex;
+}
+@media only screen and (max-width: 576px){
+    .text-container{
+        flex-direction: column;
+    }
+}
