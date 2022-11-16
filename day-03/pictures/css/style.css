@@ -1,0 +1,30 @@
+.container{
+    border: 30px solid rgba(255, 255, 0, 0.5);
+    width: 900px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+div{
+    margin: 0;
+}
+img{
+    width: 300px;
+    height: 200px;
+    transition: 1s;
+}
+
+.filter{
+    position: absolute;
+    margin-top: -205px;
+    width: 300px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 5s;
+}
+.filter:hover{
+    display: none;
+}
+.f1{
+    transition-timing-function: ease-out;
+}
