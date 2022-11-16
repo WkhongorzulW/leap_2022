@@ -1,0 +1,6 @@
+body{
+    background-color: darksalmon;
+}
+body::after{
+    content: "xs ( extra small ) < 576px";
+}

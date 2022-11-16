@@ -1,0 +1,6 @@
+body{
+    background-color: palevioletred;
+}
+body::after{
+    content: "xl (extra large) => 1200px";
+}
