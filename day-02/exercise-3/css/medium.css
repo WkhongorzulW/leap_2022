@@ -1,0 +1,6 @@
+body{
+    background-color: deeppink;
+}
+body::after{
+    content: "xl (extra large) => 992px";
+}

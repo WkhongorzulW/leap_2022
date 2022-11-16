@@ -1,0 +1,6 @@
+body{
+    background-color: crimson;
+}
+body::after{
+    content: "xxl (extra extra large) => 1400px";
+}
