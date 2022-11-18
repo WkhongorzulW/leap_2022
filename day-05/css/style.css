@@ -1,0 +1,12 @@
+.menu{
+    display: inline;
+}
+img{
+    width: 80px;
+}
+.list{
+    display: none;
+}
+.menu:hover .list{
+    display: block;
+}
