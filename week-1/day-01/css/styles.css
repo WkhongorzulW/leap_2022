@@ -1,0 +1,75 @@
+.main-container{
+    background-color: rgb(97, 139, 179);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    font-size: 20px;
+}
+.my-form{
+    width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    display: flex;
+}
+.first-col{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px 0 0 10px;
+    padding: 40px;
+    width: 380px;
+}
+.first-col h1{
+    color: rgb(67, 67, 148);
+}
+.name{
+    display: flex;
+    gap: 10px;
+}
+.second-col{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(59, 59, 205);
+    border-radius: 0 10px 10px 0;
+    padding: 40px;
+    width: 380px;
+    color: white;
+}
+.second-col h1{
+    color: white;
+}
+input{
+    border: none;
+    border-bottom: 1px solid gray;
+    margin: 20px 0;
+}
+select{
+    border: none;
+    border-bottom: 1px solid gray;
+}
+.second-col input{
+    background-color: rgb(59, 59, 205);
+    color: white;
+    border-color: white;
+}
+.second-col select{
+    background-color: rgb(59, 59, 205);
+    color: white;
+    border-color: white;
+}
+.second-col input::placeholder{
+    color: white;
+    opacity: 1;
+}
+label{
+    font-size: 12px;
+}
+span{
+    border-bottom: 1px solid white;
+}
+button{
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px;
+    border-radius: 20px;
+}
