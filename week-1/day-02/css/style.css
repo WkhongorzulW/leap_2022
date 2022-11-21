@@ -17,6 +17,17 @@ input:hover{
 .hello{
     background-color: white;
     position: relative;
+    display: inline-block;
+    margin: 0;
+    cursor: pointer;
+}
+.hello:hover h1{
+    background-color: red;
+}
+.hello:hover .notification{
+    top: 100px;
+    left: 180px;
+    opacity: 0;
 }
 h1{
     background-color: gainsboro;
@@ -25,9 +36,6 @@ h1{
     width: 250px;
     text-align: center;
     transition: 0.5s linear;
-}
-h1:hover{
-    background-color: red;
 }
 .notification{
     background-color: red;
@@ -40,8 +48,4 @@ h1:hover{
     top: 50px;
     left: 320px;
     transition: 0.5s ease-out;
-}
-.notification:hover{
-    top: 150px;
-    left: 180px;
 }
