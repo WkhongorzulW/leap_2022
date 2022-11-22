@@ -1,0 +1,57 @@
+.container{
+    position: relative;
+    width: 900px;
+    height: 600px;
+    margin: auto;
+    color: white;
+    background-color: lightblue;
+}
+.blue{
+    position: absolute;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    top: 250px;
+    left: 400px;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.5s 0s all linear;
+}
+.red-orange{
+    position: absolute;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    top: 250px;
+    left: 400px;
+    right: 400px;
+    border-radius: 50%;
+    text-align: center;
+    transition: 1s 0s all ease;
+}
+.green{
+    position: absolute;
+    background-color: green;
+    width: 100px;
+    height: 100px;
+    top: 250px;
+    left: 400px;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.5s 0s all ease-in;
+}
+
+.container:hover .blue{
+    top: 250px;
+    left: 0;
+}
+.container:hover .red-orange{
+    top: 0;
+    left: 300px;
+    background-color: orange;
+    border-radius: 0;
+}
+.container:hover .green{
+    top: 500px;
+    left: 300px;
+}
