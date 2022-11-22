@@ -10,10 +10,10 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
-<body>
+<body class="positon-relative">
     <header class="bg-dark py-4">
         <div class="container">
-            <div class="row">
+            <nav class="navbar">
                 <h4 class="col-8 text-start text-light">Logo Brand</h4>
                 <div class="col-4 d-md-block d-none">
                     <div class="row">
@@ -28,10 +28,10 @@
                         <i class="fa-solid fa-bars-staggered"></i>
                     </button>
                 </div>
-            </div>
+            </nav>
             
             <div id="bar-item-demo" class="collapse">
-                <div class="row">
+                <div class="row pt-3 ps-3">
                     <a class="row text-decoration-none text-secondary" role="button" tabindex="0">Home</a>
                     <a class="row text-decoration-none text-secondary" role="button" tabindex="0">About</a>
                     <a class="row text-decoration-none text-secondary" role="button" tabindex="0">Services</a>
@@ -41,7 +41,7 @@
         </div>
     </header>
 
-    <div class="conatiner bg-dark pt-5">
+    <section class="conatiner bg-dark pt-5">
         <div class="col-10 mx-auto">
             <div class="row text-light">
                 <div class="col-md-6 m-auto">
@@ -56,30 +56,24 @@
                                 </div>
                                 <div class="modal-body">
                                     <p class="fs-5">Fill out this and we will get back to you</p>
-                                    <div class="row my-3">
                                         <div class="col">
-                                            <div>First Name:</div>
-                                            <input class="col-12 border rounded border-secondary p-2" type="text" name="firstname">
+                                            <div class="col my-3">
+                                                <label for="input1" class="from-label">Frist Name:</label>
+                                                <input type="text" name="firstname" class="form-control" id="input1">
+                                            </div>
+                                            <div class="col my-3">
+                                                <label for="input2" class="from-label">Last Name:</label>
+                                                <input type="text" name="lastname" class="form-control" id="input2">
+                                            </div>
+                                            <div class="col my-3">
+                                                <label for="input3" class="from-label">Email:</label>
+                                                <input type="email" name="email" class="form-control" id="input3">
+                                            </div>
+                                            <div class="col my-3">
+                                                <label for="input4" class="from-label">Phone:</label>
+                                                <input type="number" name="phone" class="form-control" id="input4">
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="row my-3">
-                                        <div class="col">
-                                            <div>Last Name:</div>
-                                            <input class="col-12 border rounded border-secondary p-2" type="text" name="lastname">
-                                        </div>
-                                    </div>
-                                    <div class="row my-3">
-                                        <div class="col">
-                                            <div>Email:</div>
-                                            <input class="col-12 border rounded border-secondary p-2" type="email" name="email">
-                                        </div>
-                                    </div>
-                                    <div class="row my-3">
-                                        <div class="col">
-                                            <div>Phone:</div>
-                                            <input class="col-12 border rounded border-secondary p-2" type="number" name="phone">
-                                        </div>
-                                    </div>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -94,11 +88,11 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- carousel -->
 
-    <div id="carousel-demo" class="carousel carousel-light slide bg-dark pt-5" data-bs-ride="carousel">
+    <section id="carousel-demo" class="carousel carousel-light slide bg-dark pt-5" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carousel-demo" data-bs-slide-to="0" class="active"></button>
             <button type="button" data-bs-target="#carousel-demo" data-bs-slide-to="1"></button>
@@ -126,135 +120,241 @@
         <button type="button" class="carousel-control-next" data-bs-target="#carousel-demo" data-bs-slide="next">
             <span class="carousel-control-next-icon"></span>
         </button>
-    </div>
+    </section>
 
-    <div class="container-fluid">
+    <section class="container-fluid">
         <div class="col-10 py-5 mx-auto">
-            <div class="row">
-                <div class="col-md-6">
-                    <img class="w-75" src="./img/collabs.svg"/>
-                </div>
-                <div class="col-md-6">
-                    <h4>ABOUT US</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod maximus erat porttitor tempor.</p> 
-                    <p>Fusce aliquet, nisi sit amet suscipit sollicitudin, dui nulla vehicula ligula, in euismod est orci dignissim quam. Sed euismod est dui, a aliquet tortor euismod sed.</p>
-                    
+                <div class="card border-0">
                     <div class="row">
-                        <button type="button" class="col-md-3 btn btn-light border border-secondary">Read more</button>
+                        <div class="col-md-6">
+                            <img class="img-fluid w-75" src="./img/collabs.svg"/>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h4 class="mt-3">ABOUT US</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod maximus erat porttitor tempor.</p> 
+                                <p>Fusce aliquet, nisi sit amet suscipit sollicitudin, dui nulla vehicula ligula, in euismod est orci dignissim quam. Sed euismod est dui, a aliquet tortor euismod sed.</p>
+                                
+                                <div class="row">
+                                    <button type="button" class="col-lg-3 btn btn-light border border-secondary">Read more</button>
+                                </div>
+                            </div>
+                        </div>
+                     </div>  
+                </div>
+        </div>
+    </section>
+
+    <section class="container-fluid bg-dark text-light">
+        <div class="col-10 py-5 mx-auto">
+            <div class="card bg-dark border-0">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h4>SUCCESS</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod maximus erat porttitor tempor.</p> 
+                        <p>Fusce aliquet, nisi sit amet suscipit sollicitudin, dui nulla vehicula ligula, in euismod est orci dignissim quam. Sed euismod est dui, a aliquet tortor euismod sed.</p>
+                        
+                        <div class="row">
+                            <button type="button" class="col-lg-3 btn btn-dark border border-secondary">Read more</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="w-75 mt-3" src="./img/collabs.svg"/>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container-fluid bg-dark text-light">
-        <div class="col-10 py-5 mx-auto">
-            <div class="row">
-                <div class="col-md-6">
-                    <h4>SUCCESS</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus euismod maximus erat porttitor tempor.</p> 
-                    <p>Fusce aliquet, nisi sit amet suscipit sollicitudin, dui nulla vehicula ligula, in euismod est orci dignissim quam. Sed euismod est dui, a aliquet tortor euismod sed.</p>
-                    
-                    <div class="row">
-                        <button type="button" class="col-md-3 btn btn-dark border border-secondary">Read more</button>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <img class="w-75" src="./img/collabs.svg"/>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid py-5">
+    <section class="container-fluid py-5">
         <div class="col-10 mx-auto">
             <div class="row">
                 <h4 class="text-center">FAQ</h4>
                 <div class="accordion" id="FAQaccordion">
-                    <div class="accordion-item">
+                    <div class="accordion-item border-0 border-bottom">
                         <h4 class="accordion-header" id="headingOne">
-                            <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                ...
+                            <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Where exactly are you located?
                             </button>
                         </h4>
-                        <div id="collapseOne" class="accordion-collapse collapse">
-                            ....
+                        <div id="collapseOne" class="accordion-collapse collapse m-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere sodales mauris vel dictum. Pellentesque vel tristique nulla. Etiam pulvinar tempor hendrerit. Maecenas aliquet enim ut elit eleifend pretium. Proin justo mi, hendrerit eget vestibulum quis, rhoncus non nisi. Phasellus.
                         </div>
                     </div>
                 </div>
                 <div class="accordion" id="FAQaccordion">
-                    <div class="accordion-item">
+                    <div class="accordion-item border-0 border-bottom">
                         <h4 class="accordion-header" id="headingOne">
-                            <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                ...
+                            <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                How much does it cost to attend?
                             </button>
                         </h4>
-                        <div id="collapseTwo" class="accordion-collapse collapse">
-                            ....
+                        <div id="collapseTwo" class="accordion-collapse collapse m-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere sodales mauris vel dictum. Pellentesque vel tristique nulla. Etiam pulvinar tempor hendrerit. Maecenas aliquet enim ut elit eleifend pretium. Proin justo mi, hendrerit eget vestibulum quis, rhoncus non nisi. Phasellus.
                         </div>
                     </div>
                 </div>
                 <div class="accordion" id="FAQaccordion">
-                    <div class="accordion-item">
+                    <div class="accordion-item border-0 border-bottom">
                         <h4 class="accordion-header" id="headingThree">
-                            <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                ...
+                            <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                What do I need to know?
                             </button>
                         </h4>
-                        <div id="collapseOne" class="accordion-collapse collapse">
-                            ....
+                        <div id="collapseThree" class="accordion-collapse collapse m-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere sodales mauris vel dictum. Pellentesque vel tristique nulla. Etiam pulvinar tempor hendrerit. Maecenas aliquet enim ut elit eleifend pretium. Proin justo mi, hendrerit eget vestibulum quis, rhoncus non nisi. Phasellus.
                         </div>
                     </div>
                 </div>
                 <div class="accordion" id="FAQaccordion">
-                    <div class="accordion-item">
+                    <div class="accordion-item border-0 border-bottom">
                         <h4 class="accordion-header" id="headingFour">
-                            <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                ...
+                            <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                How do I sign up?
                             </button>
                         </h4>
-                        <div id="collapseOne" class="accordion-collapse collapse">
-                            ....
+                        <div id="collapseFour" class="accordion-collapse collapse m-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere sodales mauris vel dictum. Pellentesque vel tristique nulla. Etiam pulvinar tempor hendrerit. Maecenas aliquet enim ut elit eleifend pretium. Proin justo mi, hendrerit eget vestibulum quis, rhoncus non nisi. Phasellus.
                         </div>
                     </div>
                 </div>
                 <div class="accordion" id="FAQaccordion">
-                    <div class="accordion-item">
+                    <div class="accordion-item border-0 border-bottom">
                         <h4 class="accordion-header" id="headingFive">
-                            <button class="accordion-button bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                                ...
+                            <button class="accordion-button collapsed text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                                Do you help me find a job?
                             </button>
                         </h4>
-                        <div id="collapseOne" class="accordion-collapse collapse">
-                            ....
+                        <div id="collapseFive" class="accordion-collapse collapse m-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere sodales mauris vel dictum. Pellentesque vel tristique nulla. Etiam pulvinar tempor hendrerit. Maecenas aliquet enim ut elit eleifend pretium. Proin justo mi, hendrerit eget vestibulum quis, rhoncus non nisi. Phasellus.
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="container-fluid bg-secondary py-5">
-        <div class="row text-light">
-            <h4 class="text-center">Our team</h4>
-            <p class="text-center">Some text</p>
-            <div class="col">
-                <div class="col-md-3">
-                    <div class="card">
-                        <img class="card-img" src="">
-                        <div class="card-body">
-                            <h5 class="card-title"></h5>
-                            <div class="card-text"></div>
-                            <a></a>
-                            <a></a>
-                            <a></a>
-                            <a></a>
+    <section class="container-fluid bg-secondary py-5">
+        <div class="row text-center">
+            <h4 class="text-light">Our team</h4>
+            <p class="text-light py-3">We listened to our people about what end how they wnated to learn, and most made it clear business was their preferred platform</p>
+            <div class="col-10 mx-auto">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 py-2">
+                        <div class="card bg-light">
+                            <img class="card-img w-75 mx-auto" src="https://www.kindpng.com/picc/m/497-4973038_profile-picture-circle-png-transparent-png.png">
+                            <div class="card-body">
+                                <h5 class="card-title">John Doe</h5>
+                                <div class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere sodales mauris vel dictum.</div>
+                                <a><i class="fa-brands fa-twitter"></i></a>
+                                <a><i class="fa-brands fa-facebook"></i></a>
+                                <a><i class="fa-brands fa-instagram"></i></a>
+                                <a><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 py-2">
+                        <div class="card bg-light">
+                            <img class="card-img w-75 mx-auto" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUtcO4YmGkZhf8rEs8DdPZYnLlPCpOF1pTMZMYf1lDHzaQFAqjUKPzRFdZaqDRuBuYKHo&usqp=CAU">
+                            <div class="card-body">
+                                <h5 class="card-title">Jane Doe</h5>
+                                <div class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere sodales mauris vel dictum.</div>
+                                <a><i class="fa-brands fa-twitter"></i></a>
+                                <a><i class="fa-brands fa-facebook"></i></a>
+                                <a><i class="fa-brands fa-instagram"></i></a>
+                                <a><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 py-2">
+                        <div class="card bg-light">
+                            <img class="card-img w-75 mx-auto" src="https://www.kindpng.com/picc/m/557-5575215_2020-profile-circle-hd-png-download.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Steve Smith</h5>
+                                <div class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere sodales mauris vel dictum.</div>
+                                <a><i class="fa-brands fa-twitter"></i></a>
+                                <a><i class="fa-brands fa-facebook"></i></a>
+                                <a><i class="fa-brands fa-instagram"></i></a>
+                                <a><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 py-2">
+                        <div class="card bg-light">
+                            <img class="card-img w-75 mx-auto" src="https://www.pngitem.com/pimgs/m/348-3481514_circle-profile-girl-hd-png-download.png">
+                            <div class="card-body">
+                                <h5 class="card-title">Sarah Smith</h5>
+                                <div class="card-text mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas posuere sodales mauris vel dictum.</div>
+                                <a><i class="fa-brands fa-twitter"></i></a>
+                                <a><i class="fa-brands fa-facebook"></i></a>
+                                <a><i class="fa-brands fa-instagram"></i></a>
+                                <a><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section class="container-fluid py-5">
+        <h4 class="text-center fs-3">Contact Info</h4>
+        <div class="col-10 mx-auto">
+            <div class="border-bottom py-1"><b>Main Location:</b> 50 Main st Boston MA</div>
+            <div class="border-bottom py-1"><b>Enrollment Phone:</b> (555)555-5555</div>
+            <div class="border-bottom py-1"><b>Student Phone:</b> (333)333-3333</div>
+            <div class="border-bottom py-1"><b>Enrollment Email:</b> (555) enroll@frontendbc.test</div>
+            <div class="border-bottom py-1"><b>Student Email:</b> student@frontendbc.test</div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid bg-dark py-5 text-white px-5">
+            <div class="row mx-5">
+                <div class="col-md-6 col-lg-3 mt-4">
+                    <h4 class="fs-3">Logo brand</h4>
+                    <div> A108 Adam Street</div>
+                    <div>New York, NY 535022</div>
+                    <div>United States</div>
+                    <div class="row mt-3">
+                        <div><b>Phone:</b> <a>+1 5589 55488 55</a></div>
+                        <div><b>Email:</b> <a>info@example.com</a></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mt-4">
+                    <h4>Useful Links</h4>
+                    <a class="d-block text-decoration-none my-2">Home</a>
+                    <a class="d-block text-decoration-none my-2">About us</a>
+                    <a class="d-block text-decoration-none my-2">Services</a>
+                    <a class="d-block text-decoration-none my-2">Terms of service</a>
+                    <a class="d-block text-decoration-none my-2">Privacy policy</a>
+                </div>
+                <div class="col-md-6 col-lg-3 mt-4">
+                    <h4>Our Services</h4>
+                    <a class="d-block text-decoration-none my-2">Web Design</a>
+                    <a class="d-block text-decoration-none my-2">Web Developer</a>
+                    <a class="d-block text-decoration-none my-2">Product Management</a>
+                    <a class="d-block text-decoration-none my-2">Marketing</a>
+                    <a class="d-block text-decoration-none my-2">Graphic Design</a>
+                </div>
+                <div class="col-md-6 col-lg-3 mt-4">
+                    <h4>Our Social Networks</h4>
+                    <div>
+                        Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies
+                    </div>
+                    <div class="text-primary mt-4">
+                        <a class="mx-1"><i class="fa-brands fa-twitter"></i></a>
+                        <a class="mx-1"><i class="fa-brands fa-facebook"></i></a>
+                        <a class="mx-1"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="mx-1"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">Copyright © 2022 Logo Brand</div>
+        </div>
+    </footer>
+
+    <a href="#" class="border rounded-circle border-primary text-primary py-1 px-2 position-fixed bottom-0 end-0"><i class="fa-solid fa-arrow-up"></i></a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
