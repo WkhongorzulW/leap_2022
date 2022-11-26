@@ -4,7 +4,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: 1200px;
+    height: 1300px;
     width: 100%;
 }
 #fcol{
@@ -13,11 +13,7 @@ body{
 .filter{
     background-image: linear-gradient(#B24592, #F15F79);
     opacity: 0.5;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
 }
 .container-fluid{
-    position: absolute;
+    top: 5vh;
 }
