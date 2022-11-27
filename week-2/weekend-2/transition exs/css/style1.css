@@ -1,0 +1,58 @@
+#tr{
+    width: 620px;
+    height: 620px;
+    position: relative;
+}
+.white{
+    width: 250px;
+    gap: 20px;
+    margin: 200px;
+}
+.white-box{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 15px gainsboro;
+}
+.red{
+    position: absolute;
+    background-color: rgba(250, 128, 114, 0.405);
+    width: 100px;
+    height: 100px;
+    transition: 1s;
+}
+.r1{
+    top: 200px;
+    left: 200px;
+}
+.r2{
+    top: 200px;
+    left: 320px;
+}
+.r3{
+    top: 320px;
+    left: 200px;
+}
+.r4{
+    top: 320px;
+    left: 320px;
+}
+
+#tr:hover .red{
+    background-color: rgba(250, 128, 114, 0.796);
+}
+#tr:hover .r1{
+    top: 0;
+    left: 0;
+}
+#tr:hover .r2{
+    top: 0;
+    left: 520px;
+}
+#tr:hover .r3{
+    top: 520px;
+    left: 0;
+}
+#tr:hover .r4{
+    top: 520px;
+    left: 520px;
+}
