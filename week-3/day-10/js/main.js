@@ -3,7 +3,7 @@ console.log("My first JS tutorial");
 console.log("In a relationship with coding <3");
 // alert("Hello from JS world to the Alert!");
 
-var hello ;
+var hello;
 console.log(hello);
 
 hello = "Hello World from Javascript!!!";
