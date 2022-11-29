@@ -174,10 +174,10 @@
 // console.log(typeof day);
 
 
-let b = prompt ("give number b");
-if (b > 0){
-    console.log("Positive")
-}
-else {
-    console.log("Negative")
-}
+// let b = prompt ("give number b");
+// if (b > 0){
+//     console.log("Positive")
+// }
+// else {
+//     console.log("Negative")
+// }
