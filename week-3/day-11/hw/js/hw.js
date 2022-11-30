@@ -18,39 +18,41 @@
 // }
 
 
-// let a = prompt ("give a point 'a'"), b = prompt ("give a point 'b'");
-// if(a < 60){
-//     console.log('Bad');
-// }
-// else if(a >= 60 && a < 70){
-//     console.log('Bat  - ' + a + ' - Enough');
-// }
-// else if(a >= 70 && a < 80){
-//     console.log('Bat  - ' + a + ' - Middle');
-// }
-// else if(a >= 80 && a < 90){
-//     console.log('Bat  - ' + a + ' - Good');
-// }
-// else if(a >= 90 && a < 100){
-//     console.log('Bat  - ' + a + ' - EXcellent');
-// }
-// if(b < 60){
-//     console.log('Onts Dumd  - ' + b + ' - Bad');
-// }
-// else if(b >= 60 && b < 70){
-//     console.log('Onts Dumd  - ' + b + ' - Enough');
-// }
-// else if(b >= 70 && b < 80){
-//     console.log('Onts Dumd  - ' + b + ' - Middle');
-// }
-// else if(b >= 80 && b < 90){
-//     console.log('Onts Dumd  - ' + b + ' - Good');
-// }
-// else if(b >= 90 && b < 100){
-//     console.log('Onts Dumd  - ' + b + ' - EXcellent');
-// }
+//dun tootsooloh
+let a = prompt ("give a point 'a'"), b = prompt ("give a point 'b'");
+if(a < 60){
+    console.log('Bat  - ' + a + ' - Bad');
+}
+else if(a >= 60 && a < 70){
+    console.log('Bat  - ' + a + ' - Enough');
+}
+else if(a >= 70 && a < 80){
+    console.log('Bat  - ' + a + ' - Middle');
+}
+else if(a >= 80 && a < 90){
+    console.log('Bat  - ' + a + ' - Good');
+}
+else if(a >= 90 && a < 100){
+    console.log('Bat  - ' + a + ' - EXcellent');
+}
+if(b < 60){
+    console.log('Onts Dumd  - ' + b + ' - Bad');
+}
+else if(b >= 60 && b < 70){
+    console.log('Onts Dumd  - ' + b + ' - Enough');
+}
+else if(b >= 70 && b < 80){
+    console.log('Onts Dumd  - ' + b + ' - Middle');
+}
+else if(b >= 80 && b < 90){
+    console.log('Onts Dumd  - ' + b + ' - Good');
+}
+else if(b >= 90 && b < 100){
+    console.log('Onts Dumd  - ' + b + ' - EXcellent');
+}
 
 
+// //minimum number
 // let a = prompt ("Give first random number:"), b = prompt ("Give second random number:"), c = prompt ("Give third random number:"), d = prompt ("Give fourth random number:");
 // if(a < b && a < c && a < d){
 //     console.log("minimum number is " + a);
@@ -62,10 +64,11 @@
 //     console.log(" minimum number is " + c);
 // }
 // else if(d < a && d < b && d < c){
-//     console.log("minimum number is " + b);
+//     console.log("minimum number is " + d);
 // }
 
 
+// //minimum and maximum number
 // let a = prompt ("Give number 'a'"), b = prompt ("Give number 'b'"), c = prompt ("Give number 'c'");
 // if (a < b && a < c){
 //     console.log("minimum number is " + a);
@@ -88,7 +91,7 @@
 // }
 
 
-
+// //high year
 // let year = prompt ("Give some year number");
 // let k = year % 4;
 // let l = year % 100;

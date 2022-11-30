@@ -43,6 +43,7 @@ console.log(eight);
 console.log(nine);
 
 console.log("3:");
+// //younger one
 // let myAge = (18);
 // let yourAge = prompt("Your age :");
 // let result = (myAge - yourAge);
@@ -54,6 +55,7 @@ console.log("3:");
 // }
 
 console.log("4:");
+// //salary
 // let hours = 40;
 // let ratePerHour = 20000;
 // let yourHours = prompt("Enter your work hour:")
@@ -61,6 +63,7 @@ console.log("4:");
 // console.log(salary);
 
 console.log("5:")
+//add the numbers which is 80 <
 let a = prompt("give a"), b = prompt("give b"), c = prompt("give c"), d = prompt("give d");
 let e = a + b + c + d;
 let f = a + b + c;
@@ -68,11 +71,11 @@ let g = a + b + d;
 let h = a + d + c;
 let j = d + b + c;
 let k = a + b, l = a + c, m = a + d, n = b + d, o = b + c, p = c + d;
-
+//4
 if(a > 80 && b > 80 && c > 80 && d > 80){
     console.log(e);
 }
-
+//3
 else if(a > 80 && b > 80 && c > 80 && d < 80){
     console.log(f);
 }
@@ -85,7 +88,7 @@ else if(a > 80 && b < 80 && c > 80 && d > 80){
 else if(a < 80 && b > 80 && c > 80 && d > 80){
     console.log(j);
 }
-
+//2
 else if(a > 80 && b > 80 && c < 80 && d < 80){
     console.log(k);
 }
@@ -104,8 +107,7 @@ else if(a < 80 && b > 80 && c > 80 && d < 80){
 else if(a < 80 && b < 80 && c > 80 && d > 80){
     console.log(p);
 }
-
-
+//1
 else if(a > 80 && b < 80 && c < 80 && d < 80){
     console.log(a);
 }
