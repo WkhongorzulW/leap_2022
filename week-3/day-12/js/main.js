@@ -75,6 +75,7 @@
 // const str = "Life, the universe and everything."
 // console.log(str.length);
 
+
 // const registerNumber = prompt("Please give your register number");
 // if(registerNumber.length == 10){
 //     alert("Done")
@@ -139,7 +140,7 @@
 // }
 
 
-// let abc = prompt("Please give a number (...)");
+// let abc = prompt("Please give number for (...) abc");
 // let a = Number(abc.charAt(0));
 // let b = Number(abc.charAt(1));
 // let c = Number(abc.charAt(2));
@@ -147,12 +148,13 @@
 //     alert(a + b + c);
 // }
 
+
 // //triangle
 // const a = prompt(Number("Give side a for triangle"));
 // const b = prompt(Number("Give side b for triangle"));
 
 // if(Number.isInteger(Number(a)) && Number.isInteger(Number(b))){
 //     alert(Math.sqrt(a * a + b * b));
+// } else {
+//     alert("Not a Number");
 // }
-
-
