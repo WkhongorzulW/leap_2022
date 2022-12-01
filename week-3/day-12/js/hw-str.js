@@ -29,6 +29,7 @@
 // let lastName = prompt("Овог");
 // let country = prompt("Улс");
 // let city = prompt("Хот");
+// let district = prompt("Дүүрэг");
 // let age = prompt("Нас");
 // let job = prompt("Ажил");
 // alert("Намайг " + lastName + "-н " + firstName + " гэдэг. Би " + age + " настай. " + country + " улсын " + city + " хотод амьдардаг. " + job + "-р ажилладаг.");

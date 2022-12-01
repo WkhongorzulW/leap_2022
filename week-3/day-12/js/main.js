@@ -150,8 +150,8 @@
 
 
 // //triangle
-// const a = prompt(Number("Give side a for triangle"));
-// const b = prompt(Number("Give side b for triangle"));
+// const a = Number(prompt("Give side a for triangle"));
+// const b = Number(prompt("Give side b for triangle"));
 
 // if(Number.isInteger(Number(a)) && Number.isInteger(Number(b))){
 //     alert(Math.sqrt(a * a + b * b));
