@@ -174,6 +174,21 @@
 // console.log(count); //10 
 // console.log(sum); //55
 
+// // odd numbers until 10
+// let a = 10, b = 1;
+// while(b <= a){
+//     console.log(b);
+//     b = b + 2;
+// }
+
+// //even numbers until 10
+// let a = 10, b = 2;
+// while(b <= a){
+//     console.log(b);
+//     b = b + 2;
+// }
+
+
 
 // //fibonacci
 // let count = 5;
@@ -222,14 +237,10 @@
 
 // // n < 100
 // let x = Number(prompt("Give a number < 100"));
-// let result = x % 2;
+// let result = x % 1;
 // let result2 = x % x;
-// while(result == 0 && result2 == 0){
-//     alert("true");
-//     x = Number(prompt("Give a number < 100"));
-//     alert("false")
-// }
+// if(result )
 
 
-let a = prompt("Give number");
-console.log(a.length);
+// let a = prompt("Give number");
+// console.log(a.length);
