@@ -8,10 +8,27 @@
 // let arr = [5, 6, 4, 12, 19, 121, 1, 7, 9, 63];
 
 
-let arrayOfNumbers = [43, 56, 23, 89, 88, 90, 99, 652, 15, 290, 11];
-let sum = 0;
-for(let i = 0; i < arrayOfNumbers.length; i++){
-    sum = sum + arrayOfNumbers[i];
+let itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"];
+console.log(itCompanies);
+
+for(let a = 0; a < 3; a++){
+    console.log(itCompanies[a]);
 }
-console.log(sum);
+console.log("---");
+for(let b = 1; b < itCompanies.length; b++){
+    console.log(itCompanies[itCompanies.length - 1]);
+    itCompanies.length = itCompanies.length - 1;
+}
+console.log("---");
+console.log(itCompanies[3]);
+
+console.log("---");
+
+
+// let arrayOfNumbers = [43, 56, 23, 89, 88, 90, 99, 652, 15, 290, 11];
+// let sum = 0;
+// for(let i = 0; i < arrayOfNumbers.length; i++){
+//     sum = sum + arrayOfNumbers[i];
+// }
+// console.log(sum);
 
