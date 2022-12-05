@@ -38,22 +38,25 @@
 
 
 
-let itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"];
-console.log(itCompanies);
-console.log(itCompanies.length);
-console.log(itCompanies[0]);
-console.log(itCompanies[Math.ceil(itCompanies.length / 2)]);
-console.log(itCompanies[itCompanies.length - 1]);
+// let itCompanies = ["Facebook", "Google", "Microsoft", "Apple", "IBM", "Oracle", "Amazon"];
+// console.log(itCompanies);
+// console.log(itCompanies.length);
+// console.log(itCompanies[0]);
+// console.log(itCompanies[Math.ceil(itCompanies.length / 2)]);
+// console.log(itCompanies[itCompanies.length - 1]);
 
-console.log("-----");
-for(let i = 0; i < itCompanies.length; i++){
-    console.log(itCompanies[i]);
-}
+// console.log("-----");
+// for(let i = 0; i < itCompanies.length; i++){
+//     console.log(itCompanies[i]);
+// }
 
-console.log("-----");
-for(let a = 0; a < itCompanies.length; a++){
-    console.log(itCompanies[a].toUpperCase());
-}
+// console.log("-----");
+// for(let a = 0; a < itCompanies.length; a++){
+//     console.log(itCompanies[a].toUpperCase());
+// }
 
-console.log("-----");
-console.log(`${itCompanies[0]}, ${itCompanies[1]}, ${itCompanies[2]}, ${itCompanies[3]}, ${itCompanies[4]}, ${itCompanies[5]}, ${itCompanies[6]} зэрэг мэдээллийн технологийн томоохон компаниуд.`)
+// console.log("-----");
+// console.log(`${itCompanies[0]}, ${itCompanies[1]}, ${itCompanies[2]}, ${itCompanies[3]}, ${itCompanies[4]}, ${itCompanies[5]}, ${itCompanies[6]} зэрэг мэдээллийн технологийн томоохон компаниуд.`);
+
+
+
