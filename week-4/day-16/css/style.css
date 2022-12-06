@@ -1,0 +1,6 @@
+h1{
+    text-align: center;
+    color: crimson;
+    background-image: linear-gradient(to right, pink, white, pink);
+    padding: 15px;
+}
