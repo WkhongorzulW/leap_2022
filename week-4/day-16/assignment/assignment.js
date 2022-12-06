@@ -1,7 +1,7 @@
 let input = Number(prompt("Give me your prime number"));
 let temp = 0;
 
-for(let i = 2; i < Math.round(input / 2); i++){
+for(let i = 2; i < input; i++){
     if(input % i == 0){
         temp = temp + 1;
     }
