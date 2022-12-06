@@ -65,6 +65,16 @@
 // f4(guess);
 
 
-//2D Array
-let row = Number(prompt("Give me your row"));
-let col = Number(prompt("Give me your column"));
+// //2D Array
+// // pyramid
+// let col = Number(prompt("Give me your column"));
+// let star = "*";
+// console.log(star);
+// while(star.length < col + 2){
+//     star = star + " * *";
+//     console.log(star);
+// }
+
+
+// square
+let 
