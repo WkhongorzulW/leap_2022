@@ -42,3 +42,21 @@ function multiplyTwoNumbers(x, y){
     return x * y;
 }
 console.log(multiplyTwoNumbers(4, 5));
+
+
+function multiplyThreeNumbers(x, y, z){
+    const m = x * y * z;
+    return m;
+}
+const result = multiplyThreeNumbers(4, 5, 6);
+console.log(result);
+
+
+for(let i = 0; i < a.length; i++){
+    if(isEven(a[i])){
+        a[i] = a[i] + 4;
+    } else{
+        a[i] = a[i] - 5;
+    }
+}
+console.log(a);
