@@ -44,3 +44,8 @@ let newTeacher = Object.create({
     lastName: "lastname",
 })
 console.log(newTeacher);
+
+
+Object.assign({
+    
+}, newTeacher)
