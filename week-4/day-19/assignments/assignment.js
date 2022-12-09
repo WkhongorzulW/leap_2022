@@ -50,6 +50,14 @@ function studentsAge(array){
 
 }
 
+function isSingle(array){
+    for(let i = 0; i < array.length; i++){
+        if(array[i].single == false){
+            console.log(`${array[i].sName} is single`);
+        }
+    }
+}
+
 let students = [
     {
         sName: "Tsetsgee",
@@ -78,3 +86,72 @@ let students = [
 ]
 findOlderStudents(students);
 studentsAge(students);
+isSingle(students);
+
+//Accessing object
+console.log("------------accessing object--------------");
+
+function gender(array){
+    let male = 0;
+    for(let i = 0; i < array.length; i++){
+        if(array[i].gender == "male"){
+            male = male + 1;
+        } 
+    }
+    return male;
+}
+
+function avarageOfAges(array){
+    let sum = 0;
+    for(let i = 0; i < array.length; i++){
+        sum = sum + array[i].age;
+    }
+    return sum / array.length;
+}
+
+let arrStudents = [
+    {
+        sName: "Sed-Erdene",
+        age: 19,
+        gender: "male", 
+    },
+    {
+        sName: "Indra",
+        age: 19,
+        gender: "female", 
+    },
+    {
+        sName: "Khatnaa",
+        age: 21,
+        gender: "male", 
+    },
+    {
+        sName: "Temuulen",
+        age: 23,
+        gender: "male", 
+    },
+    {
+        sName: "Namuun",
+        age: 23,
+        gender: "female", 
+    }
+]
+
+
+console.log(`Avarage of students ages: ${avarageOfAges(arrStudents)}`);
+console.log(`Male: ${gender(arrStudents)}`);
+console.log(`Female: ${arrStudents.length - gender(arrStudents)}`);
+
+arrStudents[0].lastname = "Bat";
+console.log(arrStudents[0]);
+
+//MERN Object
+console.log("------------mern object--------------");
+
+const users = [
+    {
+        uName: "Alex",
+        email: "alex@alex.com",
+        skills: ["HTML", "CSS", "JS"]
+    }
+]

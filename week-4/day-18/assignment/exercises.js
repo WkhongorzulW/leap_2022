@@ -1,30 +1,30 @@
-// Ex-01 JS Methods
+//sEx-01 JS Methods
 
-// // Ex-01
+// Ex-01
 
-// const shoppingCard = ["Milk", "Coffee", "Tea", "Honey"];
-// console.log(shoppingCard);
+const shoppingCard = ["Milk", "Coffee", "Tea", "Honey"];
+console.log(shoppingCard);
 
-// if(!shoppingCard.includes("Meat")){
-//     shoppingCard.unshift("Meat");
-//     console.log(shoppingCard);
-// }
+if(!shoppingCard.includes("Meat")){
+    shoppingCard.unshift("Meat");
+    console.log(shoppingCard);
+}
 
-// if(!shoppingCard.includes("Sugar")){
-//     shoppingCard.push("Sugar");
-//     console.log(shoppingCard);
-// }
+if(!shoppingCard.includes("Sugar")){
+    shoppingCard.push("Sugar");
+    console.log(shoppingCard);
+}
 
-// console.log(shoppingCard.indexOf("Honey"));
-// let allergicToHoney = prompt("Allergic to honey?");
-// if(allergicToHoney == "yes"){
-//     shoppingCard.splice(4, 1);
-//     console.log(shoppingCard);
-// }
+console.log(shoppingCard.indexOf("Honey"));
+let allergicToHoney = prompt("Allergic to honey?");
+if(allergicToHoney == "yes"){
+    shoppingCard.splice(4, 1);
+    console.log(shoppingCard);
+}
 
-// console.log(shoppingCard.indexOf("Tea"));
-// shoppingCard.splice(3, 1, "Green Tea");
-// console.log(shoppingCard);
+console.log(shoppingCard.indexOf("Tea"));
+shoppingCard.splice(3, 1, "Green Tea");
+console.log(shoppingCard);
 
 
 // // Ex-02
@@ -60,27 +60,27 @@ let carBrands = [
 ];
 // let input = (prompt("Give first letter of car brand :")).toUpperCase();
 
-// function brands(b){
-//     for(let i = 0; i < carBrands.length; i++){
-//         if(carBrands[i][0][0] === b){
-//             console.log(`brand:  ${carBrands[i][0]}`);
-//             console.log(`country:  ${carBrands[i][1]}`);
-//             console.log(`year:  ${carBrands[i][2]}`);
-//         }
-//     }
-// }
-// brands(input);
+function brands(b){
+    for(let i = 0; i < carBrands.length; i++){
+        if(carBrands[i][0][0] === b){
+            console.log(`brand:  ${carBrands[i][0]}`);
+            console.log(`country:  ${carBrands[i][1]}`);
+            console.log(`year:  ${carBrands[i][2]}`);
+        }
+    }
+}
+brands(input);
 
 
-// let state = (prompt("Give the state of car state :"));
-// function cars(x){
-//     for(let i = 0; i < carBrands.length; i++){
-//         if(carBrands[i][1] == x){
-//             console.log(carBrands[i]);
-//         }
-//     }
-// }
-// cars(state);
+let state = (prompt("Give the state of car state :"));
+function cars(x){
+    for(let i = 0; i < carBrands.length; i++){
+        if(carBrands[i][1] == x){
+            console.log(carBrands[i]);
+        }
+    }
+}
+cars(state);
 
 
 
