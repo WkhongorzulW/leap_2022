@@ -35,18 +35,18 @@
 // let arr = [1, 2, 3, 4, 5, 6, 7];
 // printArray(arr);
 
-// // Find Array Max
-// let findArrayMax = function(array){
-//     let max = -1;
-//     for(let i = 0; i < array.length; i++){
-//         if(max <= array[i]){
-//             max = array[i];
-//         }
-//     }
-//     return max;
-// }
-// let arr = [1, 2, 3, 4, 5, 6, 7];
-// console.log(findArrayMax(arr));
+// Find Array Max
+let findArrayMax = function(array){
+    let max = -1;
+    for(let i = 0; i < array.length; i++){
+        if(max <= array[i]){
+            max = array[i];
+        }
+    }
+    return max;
+}
+let arr = [1, 2, 3, 4, 5, 6, 7];
+console.log(findArrayMax(arr));
 
 // // Find Array Avarage
 // let findArrayAvarage = (array) => {

@@ -148,10 +148,84 @@ console.log(arrStudents[0]);
 //MERN Object
 console.log("------------mern object--------------");
 
+function mostSkilled(array){
+    
+}
+
 const users = [
     {
         uName: "Alex",
         email: "alex@alex.com",
-        skills: ["HTML", "CSS", "JS"]
-    }
+        skills: ["HTML", "CSS", "JS", "Python"],
+        age: 25,
+        isLoggedIn: false,
+        points: 40,
+    },
+    {
+        uName: "John",
+        email: "john@john.com",
+        skills: ["HTML", "CSS", "JS", "React", "Redux", "Node.js"],
+        age: 20,
+        isLoggedIn: true,
+        points: 50,
+    },
+    {
+        uName: "Thomas",
+        email: "thomas@thomas.com",
+        skills: ["HTML", "CSS", "JS", "React"],
+        age: 18,
+        isLoggedIn: false,
+        points: 40,
+    },
+    {
+        uName: "Pual",
+        email: "pual@pual.com",
+        skills: ["HTML", "CSS", "JS", "MongoDB", "Express", "React", "Node"],
+        age: 25,
+        isLoggedIn: false,
+        points: 40,
+    },
+]
+console.log(users[1]);
+console.log(mostSkilled(users));
+
+
+// Store
+console.log("------------store--------------");
+
+
+
+const data = [
+    {
+        productName: "Cake",
+        unitPrice: 5000,
+        amount: 100,
+        totalPrice: 500000,
+        casherId: 1,
+        date: "2022-11-01",
+    },
+    {
+        productName: "Chocolate",
+        unitPrice: 3000,
+        amount: 18,
+        totalPrice: 54000,
+        casherId: 1,
+        date: "2022-11-01",
+    },
+    {
+        productName: "Smoothie",
+        unitPrice: 4000,
+        amount: 50,
+        totalPrice: 300000,
+        casherId: 1,
+        date: "2022-11-01",
+    },
+    {
+        productName: "Spagetti",
+        unitPrice: 3500,
+        amount: 200,
+        totalPrice: 610000,
+        casherId: 1,
+        date: "2022-11-01",
+    },
 ]
