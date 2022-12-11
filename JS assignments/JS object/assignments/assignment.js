@@ -149,8 +149,30 @@ console.log(arrStudents[0]);
 console.log("------------mern object--------------");
 
 function mostSkilled(array){
-    
+    let max = -1;
+    for(let i = 0; i < array.length; i++){
+        if(max <= array[i].skills.length){
+            max = array[i].skills.length;
+        }
+    }
+    return max;
 }
+
+let mern = function(array){
+    for(let i = 0; i < array.length; i++){
+        for(let j = 0; j < array[i].skills.length; j++){
+            if(array[i].skills[j] == "MongoDB" || array[i].skills[j] == "Express" || array[i].skills[j] == "React" || array[i].skills[j] == "Node"){
+                console.log(`${array[i].uName} ${array[i].skills}`);
+            }
+        }
+    }
+}
+
+let older = (array) => {
+    for(let i = 0; i < array.length; i++){
+
+    }
+} 
 
 const users = [
     {
@@ -164,7 +186,7 @@ const users = [
     {
         uName: "John",
         email: "john@john.com",
-        skills: ["HTML", "CSS", "JS", "React", "Redux", "Node.js"],
+        skills: ["HTML", "CSS", "JS", "React", "Redux", "Node"],
         age: 20,
         isLoggedIn: true,
         points: 50,
@@ -188,27 +210,52 @@ const users = [
 ]
 console.log(users[1]);
 console.log(mostSkilled(users));
+mern(users);
 
 
 // Store
 console.log("------------store--------------");
 
+let totalTotalPrice = (array) => {
+    let sum = 0;
+    for(let i = 0; i < array.length; i++){
+        sum = sum + array[i].totalPrice;
+    }
+    return sum;
+}
 
+let totalAmount = function(array){
+    let sum = 0;
+    for(let i = 0; i < array.length; i++){
+        sum = sum + array[i].amount;
+    }
+    return sum;
+}
 
-const data = [
+function mostSaled(array){
+    let max = -1;
+    for(let i = 0; i < array.length; i++){
+        if(max <= array[i].amount){
+            max = array[i].amount;
+        }
+    }
+    return max;
+}
+
+const dataStore = [
     {
         productName: "Cake",
         unitPrice: 5000,
         amount: 100,
-        totalPrice: 500000,
+        totalPrice: 500_000,
         casherId: 1,
         date: "2022-11-01",
     },
     {
         productName: "Chocolate",
         unitPrice: 3000,
-        amount: 18,
-        totalPrice: 54000,
+        amount: 180,
+        totalPrice: 540_000,
         casherId: 1,
         date: "2022-11-01",
     },
@@ -216,7 +263,7 @@ const data = [
         productName: "Smoothie",
         unitPrice: 4000,
         amount: 50,
-        totalPrice: 300000,
+        totalPrice: 200_000,
         casherId: 1,
         date: "2022-11-01",
     },
@@ -224,8 +271,98 @@ const data = [
         productName: "Spagetti",
         unitPrice: 3500,
         amount: 200,
-        totalPrice: 610000,
+        totalPrice: 700_000,
+        casherId: 1,
+        date: "2022-11-01",
+    },
+    {
+        productName: "Yogurt",
+        unitPrice: 2000,
+        amount: 350,
+        totalPrice: 700_000,
+        casherId: 1,
+        date: "2022-11-01",
+    },
+    {
+        productName: "Apple juice",
+        unitPrice: 2300,
+        amount: 120,
+        totalPrice: 276_000,
+        casherId: 1,
+        date: "2022-11-01",
+    },
+    {
+        productName: "Cheese cake",
+        unitPrice: 7000,
+        amount: 40,
+        totalPrice: 280_000,
+        casherId: 1,
+        date: "2022-11-01",
+    },
+    {
+        productName: "Ham",
+        unitPrice: 3300,
+        amount: 110,
+        totalPrice: 363_000,
+        casherId: 1,
+        date: "2022-11-01",
+    },
+    {
+        productName: "Rice",
+        unitPrice: 3000,
+        amount: 500,
+        totalPrice: 1_500_000,
+        casherId: 1,
+        date: "2022-11-01",
+    },
+    {
+        productName: "Noodle",
+        unitPrice: 2000,
+        amount: 450,
+        totalPrice: 900_000,
+        casherId: 1,
+        date: "2022-11-01",
+    },
+    {
+        productName: "Green tea",
+        unitPrice: 6000,
+        amount: 80,
+        totalPrice: 480_000,
+        casherId: 1,
+        date: "2022-11-01",
+    },
+    {
+        productName: "Coockie",
+        unitPrice: 4000,
+        amount: 280,
+        totalPrice: 1_120_000,
         casherId: 1,
         date: "2022-11-01",
     },
 ]
+
+
+console.log(`Total price : ${totalTotalPrice(dataStore)}`);
+console.log(`Total amount : ${totalAmount(dataStore)}`);
+
+console.log("***MORE***");
+console.log(`${dataStore[8].productName} - ${dataStore[8].unitPrice} - ${dataStore[8].amount}`);
+console.log(`${dataStore[9].productName} - ${dataStore[9].unitPrice} - ${dataStore[9].amount}`);
+console.log(`${dataStore[4].productName} - ${dataStore[4].unitPrice} - ${dataStore[4].amount}`);
+console.log(`${dataStore[11].productName} - ${dataStore[11].unitPrice} - ${dataStore[11].amount}`);
+console.log(`${dataStore[3].productName} - ${dataStore[3].unitPrice} - ${dataStore[3].amount}`);
+
+console.log("***LESS***");
+console.log(`${dataStore[6].productName} - ${dataStore[6].unitPrice} - ${dataStore[6].amount}`);
+console.log(`${dataStore[2].productName} - ${dataStore[2].unitPrice} - ${dataStore[2].amount}`);
+console.log(`${dataStore[10].productName} - ${dataStore[10].unitPrice} - ${dataStore[10].amount}`);
+console.log(`${dataStore[0].productName} - ${dataStore[0].unitPrice} - ${dataStore[0].amount}`);
+console.log(`${dataStore[7].productName} - ${dataStore[7].unitPrice} - ${dataStore[7].amount}`);
+
+
+for(let i = 0; i < dataStore.length; i++){
+    console.log(dataStore[i].productName + " - " + dataStore[i].amount);
+}
+console.log(mostSaled(dataStore));
+
+
