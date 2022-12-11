@@ -1,3 +1,18 @@
+//1
+let a = 12;
+let b = 85;
+
+function findMax(x, y){
+    if(x < y){
+        console.log(y + " is the max");
+    }
+    else if(x > y){
+        console.log(x + " is the max");
+    }
+}
+findMax(a, b);
+
+
 // // Guess the number of array 
 // let numbers = [1, 2, 3, 11, 12, 13, 21, 22, 23];
 // let guess = Number(prompt("Give a random number"));
@@ -91,15 +106,3 @@ function f1(x){
     }
 }
 f1(tips);
-
-
-// //2D Array
-// // pyramid
-// let col = Number(prompt("Give me your column"));
-// let star = "*";
-// console.log(star);
-// while(star.length < col + 2){
-//     star = star + " * *";
-//     console.log(star);
-// }
-
