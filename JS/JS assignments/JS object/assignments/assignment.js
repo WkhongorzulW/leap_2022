@@ -109,6 +109,14 @@ function avarageOfAges(array){
     return sum / array.length;
 }
 
+let sameAges =[];
+for(let i = 0; i < arrStudents.length; i++){
+    if(arrStudents[i].age == arrStudents[i + 1].age){
+        sameAges = [arrStudents[i].age, arrStudents[i + 1].age];
+    }
+}
+console.log(sameAges);
+
 let arrStudents = [
     {
         sName: "Sed-Erdene",
