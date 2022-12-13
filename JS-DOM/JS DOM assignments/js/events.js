@@ -30,6 +30,7 @@ myButton.addEventListener("click", () => {
 let registerButton = document.querySelector("#register");
 registerButton.ariaDisabled;
 
+
 document.querySelector("#changePcolor").style = "margin-top: 50px";
 let btn = document.querySelector("#changePcolor");
 function changePcolor(){
