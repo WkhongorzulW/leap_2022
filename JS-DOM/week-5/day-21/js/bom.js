@@ -41,7 +41,7 @@ let timerButton = document.getElementById("timerButton");
 timerButton.addEventListener("click", runTimerInterval);
 
 function runTimerInterval(){
-    window.setInterval(startInterval, 50);
+    window.setInterval(startInterval, 1000);
 }
 
 function startInterval(){
