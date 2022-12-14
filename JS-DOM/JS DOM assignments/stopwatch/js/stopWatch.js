@@ -4,6 +4,8 @@ let minute = document.getElementById("minute");
 let second = document.getElementById("second");
 let millisecond = document.getElementById("millisecond");
 
+document.getElementById("timing").style = "background-color: pink; padding: 15px; text-align: center; border-radius: 20px; font-size: 28px; width: 500px"
+
 startButton.addEventListener("click", runTimerInterval);
 
 function runTimerInterval(){
