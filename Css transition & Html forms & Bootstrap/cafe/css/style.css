@@ -2,3 +2,30 @@
     background-color: black;
     color: pink;
 }
+nav a{
+    color: black;
+}
+h3{
+    color: crimson;
+}
+#recipeOver1{
+    margin: 200px 0 0 130px;
+    width: 250px;
+    height: 180px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#recipeOver2{
+    margin: 150px 0 0 130px;
+    width: 300px;
+    height: 250px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#recipeOver3{
+    margin: 100px 50px;
+    width: 550px;
+    height: 350px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+}

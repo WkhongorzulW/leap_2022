@@ -17,7 +17,19 @@
             <div class="card text-white border-0">
                 <img class="card-img w-100" src="./img/hello.jpg">
                 <div class="card-img-overlay">
-                    <div class="row">
+
+                    <!-- == Nav Menu ======================================================================================================== -->
+                    <nav class="row text-center">
+                        <a href="index.html" target="_blank" class="d-none d-md-block col-2 text-decoration-none text-white py-2">HOME</a>
+                        <a class="d-none d-md-block col-2 text-decoration-none text-white py-2">ABOUT</a>
+                        <a class="d-none d-md-block col-2 text-decoration-none text-white py-2">SERVICES</a>
+                        <a href="./recipes.html" target="_blank" class="d-none d-md-block col-2 text-decoration-none text-white py-2">RECIPE</a>
+                        <a class="d-none d-md-block col-2 text-decoration-none text-white py-2">CONTACT</a>
+                        <a class="d-none d-md-block col-2 text-decoration-none text-white py-2">LOCATION</a>                                        
+                    </nav>
+
+                    <!-- == Modal Menu ======================================================================================================= -->
+                    <div class="row d-md-none d-block">
                         <div class="col">
                             <button type="button" data-bs-toggle="modal" data-bs-target="#menumodal" class="btn d-inline text-white">
                                 <i class="fa-solid fa-bars-staggered text-end"></i>
@@ -28,7 +40,7 @@
                                         <h3>MENU</h3>
                                     </div>
                                     <div class="modal-body">
-                                        <a class="d-block text-decoration-none text-white py-2" href="index.html">HOME</a>
+                                        <a class="d-block text-decoration-none text-white py-2" href="index.html" target="_blank">HOME</a>
                                         <a class="d-block text-decoration-none text-white py-2">ABOUT</a>
                                         <a class="d-block text-decoration-none text-white py-2">SERVICES</a>
                                         <a class="d-block text-decoration-none text-white py-2">RECIPE</a>
@@ -44,9 +56,12 @@
         </div>
     </header>
 
+    <!-- ======================================================= Table setting ideas ================================================================== -->
     <section class="container my-3">
             <div class="row mx-auto">
-                <div class="col-4 py-3 px-0">
+
+                <!-- ==================================================== Column one ============================================================  -->
+                <div class="col-md-4 py-3 px-0">
                     <button type="button" data-bs-toggle="modal" data-bs-target="#img1" class="btn d-inline text-white"><img class="my-2 w-100" src="./img/table/1.jpg"></button>
                     <div id="img1" class="modal modal-md fade">
                         <div class="modal-dialog">
@@ -132,7 +147,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 py-3 px-0">
+
+                <!-- ==================================================== Column two ============================================================  -->
+                <div class="col-md-4 py-3 px-0">
                     <button type="button" data-bs-toggle="modal" data-bs-target="#img14" class="btn d-inline text-white"><img class="my-2 w-100" src="./img/table/14.jpg"></button>
                     <div id="img14" class="modal modal-lg fade mt-5">
                         <div class="modal-dialog">
@@ -212,7 +229,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-4 py-3 px-0">
+
+                <!-- ==================================================== Column three ============================================================  -->
+                <div class="col-md-4 py-3 px-0">
                     <button type="button" data-bs-toggle="modal" data-bs-target="#img27" class="btn d-inline text-white"><img class="my-2 w-100" src="./img/table/27.jpg"></button>
                     <div id="img27" class="modal modal-lg fade mt-5">
                         <div class="modal-dialog">
