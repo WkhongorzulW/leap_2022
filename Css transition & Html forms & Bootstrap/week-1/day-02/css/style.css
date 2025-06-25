@@ -14,7 +14,7 @@ input{
 input:hover{
     width: 150px;
 }
-.hello{
+/* .hello{
     background-color: white;
     position: relative;
     display: inline-block;
@@ -48,4 +48,58 @@ h1{
     top: 50px;
     left: 320px;
     transition: 0.5s ease-out;
+} */
+
+.hello {
+  background-color: white;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  cursor: pointer;
+}
+
+h1 {
+  background-color: gainsboro;
+  color: white;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  animation: heading 1s 2 alternate;
+}
+
+.notification {
+  background-color: red;
+  color: white;
+  font-size: 30px;
+  padding: 10px 18px;
+  border-radius: 50%;
+  width: 20px;
+  text-align: center;
+  position: absolute;
+  top: 50px;
+  left: 320px;
+  opacity: 1;
+  animation: notification 1s 2 alternate;
+}
+
+@keyframes heading {
+  from {
+    background-color: gainsboro;
+  }
+  to {
+    background-color: red;
+  }
+}
+
+@keyframes notification {
+  from {
+    top: 50px;
+    left: 320px;
+    opacity: 1;
+  }
+  to {
+    top: 100px;
+    left: 180px;
+    opacity: 0;
+  }
 }
